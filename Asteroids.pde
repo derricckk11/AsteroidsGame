@@ -48,7 +48,7 @@ class Asteroid extends Floater {
 
         bob.remove(i);
         i--;
-        System.out.println(bob.size());
+        //System.out.println(bob.size());
       } //end of the collision for loop and if statement
     }
   }

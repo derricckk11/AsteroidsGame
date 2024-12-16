@@ -37,7 +37,7 @@ public void draw()
   }
 
 
-  for (int i = 0; i < 250; i ++) { //creating the stars
+  for (int i = 0; i < 150; i ++) { //creating the stars
 
     nightSky[i].show();
   }

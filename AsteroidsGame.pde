@@ -11,12 +11,12 @@ public void setup()
 {
   size(800, 800);
 
-  for (int i = 0; i < 150; i++) {
+  for (int i = 0; i < 10; i++) {
 
     nightSky[i] = new Star();
   }
 
-  for (int i = 0; i < 70; i++) {
+  for (int i = 0; i < 10; i++) {
 
     bob.add(new Asteroid());
   }
@@ -37,7 +37,7 @@ public void draw()
   }
 
 
-  for (int i = 0; i < 150; i ++) { //creating the stars
+  for (int i = 0; i < 10; i ++) { //creating the stars
 
     nightSky[i].show();
   }

@@ -40,14 +40,14 @@ class Asteroid extends Floater {
 
   public void collision() {
 
-    for (int i = bob.size() - 1 ; i > 0; i--) {  //collision
+    for (int i = 0; i < bob.size(); i++) {  //collision
 
-      float d = dist((float) (test.getX()), (float) (test.getY()), (float)(bob.get(i).getCenterX()), (float) (bob.get(i).getCenterY()));
+      float d = dist((float) (test.getCenterX()), (float) (test.getCenterY()), (float)(bob.get(i).getCenterX()), (float) (bob.get(i).getCenterY()));
 
       if (d < 15) {
 
         bob.remove(i);
- 
+        i--;
         //System.out.println(bob.size());
       } //end of the collision for loop and if statement
     }
